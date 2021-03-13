@@ -1,0 +1,121 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase.specialtyTypesSetting",
+    "children" : [ {
+      "name" : "test_SpecialtyTypesDual",
+      "children" : [ {
+        "name" : "TestCreatespecialtytypes",
+        "children" : [ {
+          "name" : "专业设置-多个Create验证",
+          "uid" : "393d488526206e6",
+          "parentUid" : "90ef8f3b26a31b888ea392defe1db967",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194319260,
+            "stop" : 1608194319615,
+            "duration" : 355
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-多个update验证",
+          "uid" : "db986da0e615d206",
+          "parentUid" : "90ef8f3b26a31b888ea392defe1db967",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194319619,
+            "stop" : 1608194319842,
+            "duration" : 223
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-多个delete验证",
+          "uid" : "3af61916513eeb3b",
+          "parentUid" : "90ef8f3b26a31b888ea392defe1db967",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194319845,
+            "stop" : 1608194320038,
+            "duration" : 193
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "90ef8f3b26a31b888ea392defe1db967"
+      } ],
+      "uid" : "19c2e42010302b3a0a208c1d5e305cd6"
+    }, {
+      "name" : "test_SpecialtyTypesNormal",
+      "children" : [ {
+        "name" : "TestcreateSpecialtyType",
+        "children" : [ {
+          "name" : "专业设置-单个Create验证",
+          "uid" : "292a8a0a743edcaf",
+          "parentUid" : "a0e02cc19abc140b227d5f16757603a8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194320041,
+            "stop" : 1608194320108,
+            "duration" : 67
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-单个update验证",
+          "uid" : "58134238bc66583a",
+          "parentUid" : "a0e02cc19abc140b227d5f16757603a8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194320110,
+            "stop" : 1608194320178,
+            "duration" : 68
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-query全验证",
+          "uid" : "beb2d16a128e6912",
+          "parentUid" : "a0e02cc19abc140b227d5f16757603a8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194320181,
+            "stop" : 1608194320253,
+            "duration" : 72
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-多个disable验证",
+          "uid" : "3656b3c6969dd3f3",
+          "parentUid" : "a0e02cc19abc140b227d5f16757603a8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194320257,
+            "stop" : 1608194320772,
+            "duration" : 515
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "专业设置-单个delete验证",
+          "uid" : "e08d7ba0a119dfac",
+          "parentUid" : "a0e02cc19abc140b227d5f16757603a8",
+          "status" : "passed",
+          "time" : {
+            "start" : 1608194320776,
+            "stop" : 1608194320894,
+            "duration" : 118
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a0e02cc19abc140b227d5f16757603a8"
+      } ],
+      "uid" : "2e69dcb0af1ac2819dbcfa44c1d91ed5"
+    } ],
+    "uid" : "1569d4317ce720daba3857a93fea55ef"
+  } ]
+}

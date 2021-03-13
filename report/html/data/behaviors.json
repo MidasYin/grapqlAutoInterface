@@ -1,0 +1,141 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "SpecialtyTypesDual接口测试",
+    "children" : [ {
+      "name" : "create 接口验证",
+      "children" : [ {
+        "name" : "专业设置-多个Create验证",
+        "uid" : "393d488526206e6",
+        "parentUid" : "61fb580d733b029ca40df37a0efabbc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319260,
+          "stop" : 1608194319615,
+          "duration" : 355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "61fb580d733b029ca40df37a0efabbc1"
+    }, {
+      "name" : "update 接口测试",
+      "children" : [ {
+        "name" : "专业设置-多个update验证",
+        "uid" : "db986da0e615d206",
+        "parentUid" : "e037d8368b5db0306c9630d795717de3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319619,
+          "stop" : 1608194319842,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e037d8368b5db0306c9630d795717de3"
+    }, {
+      "name" : "delete接口测试",
+      "children" : [ {
+        "name" : "专业设置-多个delete验证",
+        "uid" : "3af61916513eeb3b",
+        "parentUid" : "687ffdf9b2813c6b03bbf6ffc9af0bd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319845,
+          "stop" : 1608194320038,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "687ffdf9b2813c6b03bbf6ffc9af0bd8"
+    } ],
+    "uid" : "c2830dfcd176e59c419163ba7df19047"
+  }, {
+    "name" : "SpecialtyTypesNormal接口测试",
+    "children" : [ {
+      "name" : "create 接口验证",
+      "children" : [ {
+        "name" : "专业设置-单个Create验证",
+        "uid" : "292a8a0a743edcaf",
+        "parentUid" : "50079c167756e3d94ea67c20a272621f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320041,
+          "stop" : 1608194320108,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "50079c167756e3d94ea67c20a272621f"
+    }, {
+      "name" : "update 接口测试",
+      "children" : [ {
+        "name" : "专业设置-单个update验证",
+        "uid" : "58134238bc66583a",
+        "parentUid" : "449e9e30065cee30286b0caac9f1dd34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320110,
+          "stop" : 1608194320178,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "449e9e30065cee30286b0caac9f1dd34"
+    }, {
+      "name" : "query 接口验证",
+      "children" : [ {
+        "name" : "专业设置-query全验证",
+        "uid" : "beb2d16a128e6912",
+        "parentUid" : "8dc52e6717ccd5b9ad05c1c1f36ef229",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320181,
+          "stop" : 1608194320253,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8dc52e6717ccd5b9ad05c1c1f36ef229"
+    }, {
+      "name" : "disable 接口测试",
+      "children" : [ {
+        "name" : "专业设置-多个disable验证",
+        "uid" : "3656b3c6969dd3f3",
+        "parentUid" : "c71fe1a8aca5f7da06586ade4886106c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320257,
+          "stop" : 1608194320772,
+          "duration" : 515
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c71fe1a8aca5f7da06586ade4886106c"
+    }, {
+      "name" : "delete接口测试",
+      "children" : [ {
+        "name" : "专业设置-单个delete验证",
+        "uid" : "e08d7ba0a119dfac",
+        "parentUid" : "f1ffd2fbce0dd9f5dd7f05900beea225",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320776,
+          "stop" : 1608194320894,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f1ffd2fbce0dd9f5dd7f05900beea225"
+    } ],
+    "uid" : "9f510832d07a9a8b146ad1ed4366f3e4"
+  } ]
+}

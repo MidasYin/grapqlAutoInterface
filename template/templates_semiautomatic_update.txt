@@ -1,0 +1,42 @@
+#接口自动化模板
+import allure
+from settings import *
+from lib.getLogging import Logger
+from lib.common import Common
+import lib.globalSetting as Glob
+import pytest
+
+#生成filename.log文件
+filename = os.path.basename(__file__)
+logging = Logger(filename).getlog()
+featureName = filename.split(".")[0].split("_")[1] + "接口测试"
+
+@allure.feature(featureName)
+class Test%(class_name)s():
+
+    @allure.story('update 接口测试')
+    @allure.title("接口中文名"-单个update验证")
+    def test_%(method_name)s(self, login, getUserInfo):
+        logging.info("update interface 开始测试....")
+        with allure.step("获取从上一个接口获取到的数据"):
+            # 获取从上一个接口获取到的数据 xx
+            data = Glob.get_value(xx)
+            logging.info(data)
+            reqList = Common.cre_data('%(data_file)s.yaml', '%(fold_name)s', data, SpecialtyInput='input')
+            Auth = login
+        with allure.step("开始进行接口请求，并取到返回值"):
+            # 开始进行接口请求，并取到返回值
+            for reqlist in reqList:
+                logging.info("这里对接口返回的值进行json取值")
+                result = Common.getResult(Common.requestManual(reqlist, Auth))
+                # 以下根据返回值取key,替换X
+                pytest.assume(result[X], Glob.get_value("QueryCheck"))
+        with allure.step("与数据库数据进行对比..."):
+            updateCheckPoint = Glob.get_value("QueryCheck")
+            #以下传入查询的node，key
+            querySqlResult = Common.getSqlResult(node, key, "fetchall", tenant_id=getUserInfo)
+            logging.info("数据库查询并sort排序的结果为：s"  sorted(querySqlResult))
+            logging.info("接口返回并sort排序的数据为：s"  sorted(updateCheckPoint))
+            pytest.assume(sorted(querySqlResult).__eq__(sorted(updateCheckPoint)))
+        logging.info("update interface 结束测试....")
+

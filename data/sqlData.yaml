@@ -1,0 +1,103 @@
+educationSetting:
+  queryCheckSql: select id from education where name = 'xx' and describe = 'xxxx' and is_delete = 'f'
+  queryCheckSqlS: select id from education where  is_delete = 'f' and
+    ((name = 'dual1' and describe = 'xxxx') or
+    (name = 'dual2' and  describe = 'xxxx') or
+    (name = 'dual3' and  describe = 'xxxx'))
+  updateCheckSql: select id from education where name = 'modify one' and describe = 'modify one' and is_delete = 'f'
+  updateCheckSqlS: select id from education where is_delete = 'f' and
+    ((name = 'modify1' and describe = 'modify') or
+    (name = 'modify2' and  describe = 'modify') or
+    (name = 'modify3' and  describe = 'modify'))
+  queryAllIds: select id from education where is_delete = 'f'
+  disableCheck: select id from education where is_delete = 'f' and is_disabled = 't'
+  ableCheck: select id from education where is_delete = 'f' and is_disabled = 'f'
+
+specialtyTypesSetting:
+  queryCheckSql: select id from specialty where name = 'xx' and describe = 'xxxx' and is_delete = 'f'
+  queryCheckSqlS: select id from specialty where is_delete = 'f' and
+      ((name = 'Dual 11' and describe = '1111') or
+      (name = 'Dual 22' and  describe = '2222') or
+      (name = 'Dual 33' and  describe = '3333') or
+      (name = 'Dual 44' and  describe = '4444'))
+  updateCheckSql: select id from specialty where name = 'modify one' and describe = 'modify one' and is_delete = 'f'
+  updateCheckSqlS: select id from specialty where is_delete = 'f' and
+      ((name = 'modify one' and describe = 'modify one') or
+      (name = 'modify two' and  describe = 'modify two') or
+      (name = 'modify three' and  describe = 'modify three') or
+      (name = 'modify four' and  describe = 'modify four'))
+  queryAllIds: select id from specialty where is_delete = 'f'
+  disableCheck: select id from specialty where is_delete = 'f' and is_disabled = 't'
+  ableCheck: select id from specialty where is_delete = 'f' and is_disabled = 'f'
+
+employTypeSetting:
+  queryCheckSql: select id from employment_type where name = 'xx' and describe = 'xxxx' and is_delete = 'f'
+  queryCheckSqlS: select id from employment_type where  is_delete = 'f' and
+    ((name = 'dual1' and describe = 'xxxx') or
+    (name = 'dual2' and  describe = 'xxxx') or
+    (name = 'dual3' and  describe = 'xxxx'))
+  updateCheckSql: select id from employment_type where name = 'modify one' and describe = 'modify one' and is_delete = 'f'
+  updateCheckSqlS: select id from employment_type where is_delete = 'f' and
+    ((name = 'modify1' and describe = 'modify') or
+    (name = 'modify2' and  describe = 'modify') or
+    (name = 'modify3' and  describe = 'modify'))
+  queryAllIds: select id from employment_type where is_delete = 'f'
+  disableCheck: select id from employment_type where is_delete = 'f' and is_disabled = 't'
+  ableCheck: select id from employment_type where is_delete = 'f' and is_disabled = 'f'
+
+laborDemand:
+  queryCheckSqlS: SELECT id FROM  job_require where  is_delete=false and department_id = %s and post_id in %s  and tenant_id = %s;
+  updateCheckSql: SELECT id FROM  job_require where  is_delete=false and department_id = %s and post_id in %s and tenant_id = %s and require_num = %s;
+  queryAllIds: select id from job_require where is_delete = 'f'
+
+positionCategory:
+  queryCheckSql: select id from position_category where name = 'test' and full_name = 'test' and is_delete = 'f' and display_order = 1
+  queryCheckSqlS: select id from position_category where  is_delete = 'f' and
+    ((name = 'one' and full_name = 'one') or
+    (name = 'two' and  full_name = 'two') )
+  updateCheckSql: select id from position_category where name = 'test1' and full_name = 'test1' and is_delete = 'f' and display_order = 0
+  updateCheckSqlS: select id from position_category where  is_delete = 'f' and
+    ((name = 'three' and full_name = 'three' and display_order = 0) or
+    (name = 'four' and  full_name = 'four' and display_order = 0))
+  queryAllIds: select id from position_category where is_delete = 'f'
+  disableCheck: select id from position_category where is_delete = 'f' and is_disabled = 't'
+  ableCheck: select id from position_category where is_delete = 'f' and is_disabled = 'f'
+
+position:
+  querypositionCategory: select id from position_category where name = 'five' and full_name = 'five' and is_delete = 'f' and display_order = 1
+  queryCheckSql: select id from position where name = 'test' and full_name = 'test' and is_delete = 'f' and display_order = 1 and
+    "positionCategory_id" = %s and tenant_id = %s
+  queryCheckSqlS: select id from position where  is_delete = 'f' and
+    ((name = 'one' and full_name = 'one') or
+    (name = 'two' and  full_name = 'two') ) and "positionCategory_id" = %s and tenant_id = %s
+  updateCheckSql: select id from position where name = 'test1' and full_name = 'test1' and is_delete = 'f' and display_order = 0
+    and "positionCategory_id" = %s and tenant_id = %s
+  updateCheckSqlS: select id from position where  is_delete = 'f' and
+    ((name = 'three' and full_name = 'three' and display_order = 0) or
+    (name = 'four' and  full_name = 'four' and display_order = 0))
+    and "positionCategory_id" = %s and tenant_id = %s
+  queryAllIds: select id from position where is_delete = 'f' and "positionCategory_id" = %s and tenant_id = %s
+  disableCheck: select id from position where is_delete = 'f' and is_disabled = 't' and "positionCategory_id" = %s and tenant_id = %s
+  ableCheck: select id from position where is_delete = 'f' and is_disabled = 'f' and "positionCategory_id" = %s and tenant_id = %s
+
+post:
+  querypositionCategory: select id from position_category where name = 'Post' and full_name = 'Post' and is_delete = 'f' and display_order = 1
+  queryposition: select id from position where name = 'test' and full_name = 'test' and is_delete = 'f' and display_order = 1 and
+    "positionCategory_id" = %s and tenant_id = %s
+  queryCheckSql: select id from post where name = 'testPost' and full_name = 'testPost' and is_delete = 'f' and display_order = 1 and
+    position_id = %s and post_level_id = %s and tenant_id = %s
+  queryCheckSqlS: select id from post where is_delete = 'f' and
+    ((name = 'one' and full_name = 'one') or
+    (name = 'two' and  full_name = 'two' ))
+    and display_order = 1 and
+    position_id = %s and post_level_id = %s and tenant_id = %s
+  updateCheckSql: select id from post where name = 'testPost1' and full_name = 'testPost1' and is_delete = 'f' and display_order = 0 and
+    position_id = %s and post_level_id = %s and tenant_id = %s
+  updateCheckSqlS: select id from post where is_delete = 'f' and
+    ((name = 'three' and full_name = 'three') or
+    (name = 'four' and  full_name = 'four' ))
+    and display_order = 0 and
+    position_id = %s and post_level_id = %s and tenant_id = %s
+  queryAllIds: select id from post where is_delete = 'f' and position_id = %s and post_level_id = %s and tenant_id = %s
+  disableCheck: select id from post where is_delete = 'f' and is_disabled = 't' and position_id = %s and post_level_id = %s and tenant_id = %s
+  ableCheck: select id from post where is_delete = 'f' and is_disabled = 'f' and position_id = %s and post_level_id = %s and tenant_id = %s

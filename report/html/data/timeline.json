@@ -1,0 +1,109 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "PC-XLDN-A001",
+    "children" : [ {
+      "name" : "14444-MainThread",
+      "children" : [ {
+        "name" : "专业设置-多个update验证",
+        "uid" : "db986da0e615d206",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319619,
+          "stop" : 1608194319842,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-单个Create验证",
+        "uid" : "292a8a0a743edcaf",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320041,
+          "stop" : 1608194320108,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个delete验证",
+        "uid" : "3af61916513eeb3b",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319845,
+          "stop" : 1608194320038,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-单个update验证",
+        "uid" : "58134238bc66583a",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320110,
+          "stop" : 1608194320178,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-query全验证",
+        "uid" : "beb2d16a128e6912",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320181,
+          "stop" : 1608194320253,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个Create验证",
+        "uid" : "393d488526206e6",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319260,
+          "stop" : 1608194319615,
+          "duration" : 355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个disable验证",
+        "uid" : "3656b3c6969dd3f3",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320257,
+          "stop" : 1608194320772,
+          "duration" : 515
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-单个delete验证",
+        "uid" : "e08d7ba0a119dfac",
+        "parentUid" : "3dd0979da733c1413f900b0e0922216b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320776,
+          "stop" : 1608194320894,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3dd0979da733c1413f900b0e0922216b"
+    } ],
+    "uid" : "e501e7078ea307364372dcffe18efcb8"
+  } ]
+}

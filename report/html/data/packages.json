@@ -1,0 +1,113 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase.specialtyTypesSetting",
+    "children" : [ {
+      "name" : "test_SpecialtyTypesDual",
+      "children" : [ {
+        "name" : "专业设置-多个Create验证",
+        "uid" : "393d488526206e6",
+        "parentUid" : "dad3333ef8a892c42a85e7f8ca6cf4ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319260,
+          "stop" : 1608194319615,
+          "duration" : 355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个update验证",
+        "uid" : "db986da0e615d206",
+        "parentUid" : "dad3333ef8a892c42a85e7f8ca6cf4ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319619,
+          "stop" : 1608194319842,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个delete验证",
+        "uid" : "3af61916513eeb3b",
+        "parentUid" : "dad3333ef8a892c42a85e7f8ca6cf4ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194319845,
+          "stop" : 1608194320038,
+          "duration" : 193
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dad3333ef8a892c42a85e7f8ca6cf4ef"
+    }, {
+      "name" : "test_SpecialtyTypesNormal",
+      "children" : [ {
+        "name" : "专业设置-单个Create验证",
+        "uid" : "292a8a0a743edcaf",
+        "parentUid" : "cddece8e392aa854b9150c442f364440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320041,
+          "stop" : 1608194320108,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-单个update验证",
+        "uid" : "58134238bc66583a",
+        "parentUid" : "cddece8e392aa854b9150c442f364440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320110,
+          "stop" : 1608194320178,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-query全验证",
+        "uid" : "beb2d16a128e6912",
+        "parentUid" : "cddece8e392aa854b9150c442f364440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320181,
+          "stop" : 1608194320253,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-多个disable验证",
+        "uid" : "3656b3c6969dd3f3",
+        "parentUid" : "cddece8e392aa854b9150c442f364440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320257,
+          "stop" : 1608194320772,
+          "duration" : 515
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "专业设置-单个delete验证",
+        "uid" : "e08d7ba0a119dfac",
+        "parentUid" : "cddece8e392aa854b9150c442f364440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608194320776,
+          "stop" : 1608194320894,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cddece8e392aa854b9150c442f364440"
+    } ],
+    "uid" : "testcase.specialtyTypesSetting"
+  } ]
+}

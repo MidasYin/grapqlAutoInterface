@@ -1,0 +1,14 @@
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:51 update interface 开始测试....
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:55 [{'id': '8809044f-979c-47fd-afde-3fdafdb646ed'}]
+INFO     common:common.py:189 getYaml:{'input': {'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}
+INFO     common:common.py:190 reponseInterface:[{'id': '8809044f-979c-47fd-afde-3fdafdb646ed'}]
+INFO     common:common.py:191 kwargs: {'SpecialtyInput': 'input'}
+INFO     common:common.py:213 [{'input': {'id': '8809044f-979c-47fd-afde-3fdafdb646ed', 'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}]
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:61 这里对接口返回的值进行json取值
+INFO     common:common.py:164 执行post请求....
+INFO     common:common.py:166 {'query': 'mutation mergeSpecialty($input:SpecialtyInput!) { mergeSpecialty(input:$input) }', 'operationName': 'mergeSpecialty', 'variables': {'input': {'id': '8809044f-979c-47fd-afde-3fdafdb646ed', 'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}}
+INFO     common:common.py:252 开始查询...
+INFO     common:common.py:253 查询语句为：select id from specialty where name = 'modify one' and describe = 'modify one' and is_delete = 'f' and tenant_id = '9999';
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:68 数据库查询并sort排序的结果为：['8809044f-979c-47fd-afde-3fdafdb646ed']
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:69 接口返回并sort排序的数据为：['8809044f-979c-47fd-afde-3fdafdb646ed']
+INFO     test_SpecialtyTypesNormal.py:test_SpecialtyTypesNormal.py:71 update interface 结束测试....

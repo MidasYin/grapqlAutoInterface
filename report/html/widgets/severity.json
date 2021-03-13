@@ -1,0 +1,81 @@
+[ {
+  "uid" : "393d488526206e6",
+  "name" : "专业设置-多个Create验证",
+  "time" : {
+    "start" : 1608194319260,
+    "stop" : 1608194319615,
+    "duration" : 355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3656b3c6969dd3f3",
+  "name" : "专业设置-多个disable验证",
+  "time" : {
+    "start" : 1608194320257,
+    "stop" : 1608194320772,
+    "duration" : 515
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "beb2d16a128e6912",
+  "name" : "专业设置-query全验证",
+  "time" : {
+    "start" : 1608194320181,
+    "stop" : 1608194320253,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db986da0e615d206",
+  "name" : "专业设置-多个update验证",
+  "time" : {
+    "start" : 1608194319619,
+    "stop" : 1608194319842,
+    "duration" : 223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e08d7ba0a119dfac",
+  "name" : "专业设置-单个delete验证",
+  "time" : {
+    "start" : 1608194320776,
+    "stop" : 1608194320894,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3af61916513eeb3b",
+  "name" : "专业设置-多个delete验证",
+  "time" : {
+    "start" : 1608194319845,
+    "stop" : 1608194320038,
+    "duration" : 193
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "292a8a0a743edcaf",
+  "name" : "专业设置-单个Create验证",
+  "time" : {
+    "start" : 1608194320041,
+    "stop" : 1608194320108,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58134238bc66583a",
+  "name" : "专业设置-单个update验证",
+  "time" : {
+    "start" : 1608194320110,
+    "stop" : 1608194320178,
+    "duration" : 68
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

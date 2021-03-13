@@ -1,0 +1,227 @@
+{
+  "uid" : "292a8a0a743edcaf",
+  "name" : "专业设置-单个Create验证",
+  "fullName" : "testcase.specialtyTypesSetting.test_SpecialtyTypesNormal.TestcreateSpecialtyType#test_createSpecialtyType",
+  "historyId" : "2a912bae4bfa925184ae7f8afa769be6",
+  "time" : {
+    "start" : 1608194320041,
+    "stop" : 1608194320108,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "getUserInfo",
+    "time" : {
+      "start" : 1608194319218,
+      "stop" : 1608194319248,
+      "duration" : 30
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "login",
+    "time" : {
+      "start" : 1608194318825,
+      "stop" : 1608194319217,
+      "duration" : 392
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "准备数据",
+      "time" : {
+        "start" : 1608194320042,
+        "stop" : 1608194320046,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "开始进行接口请求，并取到返回值",
+      "time" : {
+        "start" : 1608194320046,
+        "stop" : 1608194320085,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "获取token，并组装成一个新的headers",
+        "time" : {
+          "start" : 1608194320046,
+          "stop" : 1608194320046,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "组装请求体",
+        "time" : {
+          "start" : 1608194320046,
+          "stop" : 1608194320046,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "执行post或者get指令",
+        "time" : {
+          "start" : 1608194320046,
+          "stop" : 1608194320085,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "与数据库数据进行对比...",
+      "time" : {
+        "start" : 1608194320085,
+        "stop" : 1608194320108,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "传递数据到下个接口...",
+      "time" : {
+        "start" : 1608194320108,
+        "stop" : 1608194320108,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "d74a3f7cfe709ded",
+      "name" : "log",
+      "source" : "d74a3f7cfe709ded.txt",
+      "type" : "text/plain",
+      "size" : 1251
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "login::0",
+    "time" : {
+      "start" : 1608194320896,
+      "stop" : 1608194320896,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "create 接口验证"
+  }, {
+    "name" : "feature",
+    "value" : "SpecialtyTypesNormal接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.specialtyTypesSetting"
+  }, {
+    "name" : "suite",
+    "value" : "test_SpecialtyTypesNormal"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestcreateSpecialtyType"
+  }, {
+    "name" : "host",
+    "value" : "PC-XLDN-A001"
+  }, {
+    "name" : "thread",
+    "value" : "14444-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.specialtyTypesSetting.test_SpecialtyTypesNormal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "292a8a0a743edcaf.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,69 @@
+#接口自动化模板
+import allure
+from settings import *
+from lib.getLogging import Logger
+from lib.common import Common
+import lib.globalSetting as Glob
+import pytest
+
+#生成filename.log文件
+filename = os.path.basename(__file__)
+logging = Logger(filename).getlog()
+featureName = filename.split(".")[0].split("_")[1] + "接口测试"
+
+@allure.feature(featureName)
+class Test%(class_name)s():
+
+    @allure.story('disable 接口测试')
+    @allure.title("中文接口名"-多个disable验证")
+    def test_%(method_name)s(self, login, getUserInfo):
+        logging.info("disable interface 开始测试....")
+        with allure.step("获取从上一个接口获取到的数据"):
+            # 获取从上一个接口获取到的数据 xx，yy
+            data = Glob.get_value(xx)
+            allIds = Glob.get_value(yy)
+            reqList = Common.cre_data('%(data_file)s.yaml', '%(fold_name)s', data, SpecialtyInput='input')
+            Auth = login
+
+        with allure.step("开始第一次进行disable请求，并取到返回值"):
+            for reqlist in reqList:
+                logging.info("这里对接口返回的值进行json取值")
+                with allure.step("执行第一次disable请求，校验置为disable"):
+                    result = Common.getResult(Common.requestManual(reqlist, Auth))
+                    logging.info("返回值为：s"  result)
+                    #输入返回值的key x
+                    pytest.assume(result[x], reqlist[1]['input']['id'])
+            with allure.step("第一次执行完整后与数据库数据进行对比..."):
+                #查询输入node 以及 key
+                querySqlResult = Common.getSqlResult(node, key, "fetchall", tenant_id=getUserInfo)
+                logging.info("数据库查询并sort排序的结果为：s" sorted(querySqlResult))
+                logging.info("接口返回并sort排序的数据为：s" sorted(allIds))
+                pytest.assume(sorted(querySqlResult).__eq__(sorted(allIds)))
+
+        with allure.step("进行query查询"):
+            with allure.step("准备数据"):
+                reqList = Common.cre_data(query查询的yaml以及foldname)
+            with allure.step("开始进行接口请求，并取到返回值"):
+                for reqlist in reqList:
+                    logging.info("这里对接口返回的值进行json取值")
+                    ids = Common.getResult(Common.requestManual(reqlist, Auth))
+                    logging.info("返回值为：s"  ids)
+                # 以下是取数，根据返回key取值，替换其中X部分为后续命名
+                resultList = ids[X]
+
+        with allure.step("开始第二次进行disable接口请求，并取到返回值"):
+             reqList = Common.cre_data('%(data_file)s.yaml', '%(fold_name)s', resultList, SpecialtyInput='input')
+            for reqlist in reqList:
+                result = Common.getResult(Common.requestManual(reqlist, Auth))
+                logging.info("返回值为：s"  result)
+                #返回KEY X替换
+                pytest.assume(result[X], reqlist[1]['input']['id'])
+            with allure.step("与数据库数据进行对比..."):
+                #查询输入node 以及 key
+                querySqlResult = Common.getSqlResult(node, key, "fetchall", tenant_id=getUserInfo)
+                logging.info("数据库查询并sort排序的结果为：s" sorted(querySqlResult))
+                logging.info("接口返回并sort排序的数据为：s"  sorted(allIds))
+                pytest.assume(sorted(querySqlResult).__eq__(sorted(allIds)))
+        logging.info("disable interface 结束测试....")
+
+

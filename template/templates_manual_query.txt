@@ -1,0 +1,47 @@
+#接口自动化模板
+import allure
+from settings import *
+from lib.getLogging import Logger
+from lib.common import Common
+import lib.globalSetting as Glob
+import pytest
+
+#生成filename.log文件
+filename = os.path.basename(__file__)
+logging = Logger(filename).getlog()
+featureName = filename.split(".")[0].split("_")[1] + "接口测试"
+checkDatalist = []
+checkDictlist = []
+
+@allure.feature(featureName)
+class Test%(class_name)s():
+
+    @allure.story('query 接口验证')
+    @allure.title("接口中文名"-query全验证")
+    def test_%(method_name)s(self, login, getUserInfo):
+        with allure.step("准备数据"):
+            reqList = Common.cre_data('%(data_file)s.yaml', '%(fold_name)s')
+            Auth = login
+        with allure.step("开始进行接口请求，并取到返回值"):
+            for reqlist in reqList:
+                logging.info("这里对接口返回的值进行json取值")
+                ids = Common.getResult(Common.requestManual(reqlist, Auth))
+            logging.info("返回值为：s"  ids)
+            # 以下是取数，根据返回key取值，替换其中X
+            resultList = ids[X]
+            checkDataList = [checkData["id"] for checkData in resultList]
+
+        with allure.step("与数据库数据进行对比..."):
+            # 查询sql的node,key值
+            querySqlResult = Common.getSqlResult(node, key, "fetchall", tenant_id=getUserInfo)
+            logging.info("数据库查询并sort排序的结果为：s"  sorted(querySqlResult))
+            logging.info("接口返回并sort排序的数据为：s"  sorted(checkDataList))
+            pytest.assume(sorted(querySqlResult).__eq__(sorted(checkDataList)))
+        with allure.step("传递数据到下个接口..."):
+            #替换下方的x
+            Glob.set_value(X, resultList)
+            Glob.set_value("allIds", checkDataList)
+            logging.info(resultList)
+        logging.info("query interface 结束测试....")
+
+

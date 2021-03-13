@@ -1,0 +1,23 @@
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:50 update interface 开始测试....
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:54 [{'id': '098c5c79-3820-4970-b5f8-0d26019512ea'}, {'id': '551dc2ac-7f02-4511-ba87-6c538f9cd380'}, {'id': 'b20c30cb-48bf-4a3d-aaf4-72963013894e'}, {'id': '80d77739-7898-4914-9f93-343bd21e1ff0'}]
+INFO     common:common.py:189 getYaml:[{'input': {'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}, {'input': {'describe': 'modify two', 'disabled': False, 'name': 'modify two', 'version': 1}}, {'input': {'describe': 'modify three', 'disabled': False, 'name': 'modify three', 'version': 1}}, {'input': {'describe': 'modify four', 'disabled': False, 'name': 'modify four', 'version': 1}}]
+INFO     common:common.py:190 reponseInterface:[{'id': '098c5c79-3820-4970-b5f8-0d26019512ea'}, {'id': '551dc2ac-7f02-4511-ba87-6c538f9cd380'}, {'id': 'b20c30cb-48bf-4a3d-aaf4-72963013894e'}, {'id': '80d77739-7898-4914-9f93-343bd21e1ff0'}]
+INFO     common:common.py:191 kwargs: {'SpecialtyInput': 'input'}
+INFO     common:common.py:213 [{'input': {'id': '098c5c79-3820-4970-b5f8-0d26019512ea', 'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}, {'input': {'id': '551dc2ac-7f02-4511-ba87-6c538f9cd380', 'describe': 'modify two', 'disabled': False, 'name': 'modify two', 'version': 1}}, {'input': {'id': 'b20c30cb-48bf-4a3d-aaf4-72963013894e', 'describe': 'modify three', 'disabled': False, 'name': 'modify three', 'version': 1}}, {'input': {'id': '80d77739-7898-4914-9f93-343bd21e1ff0', 'describe': 'modify four', 'disabled': False, 'name': 'modify four', 'version': 1}}]
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:60 这里对接口返回的值进行json取值
+INFO     common:common.py:164 执行post请求....
+INFO     common:common.py:166 {'query': 'mutation mergeSpecialty($input:SpecialtyInput!) { mergeSpecialty(input:$input) }', 'operationName': 'mergeSpecialty', 'variables': {'input': {'id': '098c5c79-3820-4970-b5f8-0d26019512ea', 'describe': 'modify one', 'disabled': False, 'name': 'modify one', 'version': 1}}}
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:60 这里对接口返回的值进行json取值
+INFO     common:common.py:164 执行post请求....
+INFO     common:common.py:166 {'query': 'mutation mergeSpecialty($input:SpecialtyInput!) { mergeSpecialty(input:$input) }', 'operationName': 'mergeSpecialty', 'variables': {'input': {'id': '551dc2ac-7f02-4511-ba87-6c538f9cd380', 'describe': 'modify two', 'disabled': False, 'name': 'modify two', 'version': 1}}}
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:60 这里对接口返回的值进行json取值
+INFO     common:common.py:164 执行post请求....
+INFO     common:common.py:166 {'query': 'mutation mergeSpecialty($input:SpecialtyInput!) { mergeSpecialty(input:$input) }', 'operationName': 'mergeSpecialty', 'variables': {'input': {'id': 'b20c30cb-48bf-4a3d-aaf4-72963013894e', 'describe': 'modify three', 'disabled': False, 'name': 'modify three', 'version': 1}}}
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:60 这里对接口返回的值进行json取值
+INFO     common:common.py:164 执行post请求....
+INFO     common:common.py:166 {'query': 'mutation mergeSpecialty($input:SpecialtyInput!) { mergeSpecialty(input:$input) }', 'operationName': 'mergeSpecialty', 'variables': {'input': {'id': '80d77739-7898-4914-9f93-343bd21e1ff0', 'describe': 'modify four', 'disabled': False, 'name': 'modify four', 'version': 1}}}
+INFO     common:common.py:252 开始查询...
+INFO     common:common.py:253 查询语句为：select id from specialty where is_delete = 'f' and ((name = 'modify one' and describe = 'modify one') or (name = 'modify two' and  describe = 'modify two') or (name = 'modify three' and  describe = 'modify three') or (name = 'modify four' and  describe = 'modify four')) and tenant_id = '9999';
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:67 数据库查询并sort排序的结果为：['098c5c79-3820-4970-b5f8-0d26019512ea', '551dc2ac-7f02-4511-ba87-6c538f9cd380', '80d77739-7898-4914-9f93-343bd21e1ff0', 'b20c30cb-48bf-4a3d-aaf4-72963013894e']
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:68 接口返回并sort排序的数据为：['098c5c79-3820-4970-b5f8-0d26019512ea', '551dc2ac-7f02-4511-ba87-6c538f9cd380', '80d77739-7898-4914-9f93-343bd21e1ff0', 'b20c30cb-48bf-4a3d-aaf4-72963013894e']
+INFO     test_SpecialtyTypesDual.py:test_SpecialtyTypesDual.py:70 update interface 结束测试....

@@ -1,0 +1,32 @@
+method: post
+graphqlRequest: query
+url: /graphql
+payload:
+  variables:
+    - input:
+        name: "three"
+        fullName: "three"
+        version: 1
+        displayOrder: 0
+    - input:
+        name: "four"
+        fullName: "four"
+        version: 1
+        displayOrder: 0
+
+  operationName: updatePosition
+  mode: update
+
+header:
+    Accept-Encoding: 'gzip, deflate, br'
+    Accept-Language: 'zh-CN,zh;q=0.9,en;q=0.8'
+    User-Agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36'
+    content-type: 'application/json'
+    accept: '*/*'
+
+query: mutation updatePosition($input:PositionInput!) {updatePosition(input:$input)↵}↵
+
+
+
+
+
