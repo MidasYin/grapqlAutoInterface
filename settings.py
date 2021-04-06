@@ -11,16 +11,16 @@ TEMPLATE_PATH = os.path.join(BASE_PATH, 'template') #存放用例生成模板文
 
 
 #设置系统的地址
-URL = "http://192.168.110.75:9001"
-devBackendUrl = "http://192.168.110.75:8086"
+URL = "http://xx"
+devBackendUrl = "http://yy"
 
 #设置pymysql相关配置
-ip = '192.168.110.75'
+ip = 'ip'
 port = '5441'  #测试数据库端口
 #port = '5442'  #dev数据库端口
-user = 'hradmin'
+user = 'zz'
 password = '123456'
-database = 'citic'
+database = 'cc'
 
 #配置redis
 
